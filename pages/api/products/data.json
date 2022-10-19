@@ -1,0 +1,521 @@
+ [
+    {
+        "brand":"Stanley Stella",
+        "type":"T-shirts",
+        "subcategory":"men",
+        "name":"Men's Premium Organic T-shirt",
+        "description":"100% Organic ring-spun Combed Cotton",
+        "baseCost":"4.33",
+        "price":"299",
+        "category": "topwear"
+      },
+      {
+        "brand":"Bella & Canvas",
+        "type":"T-shirts",
+        "subcategory":"men",
+        "name":"Unisex Premium Jersey T-shirt",
+        "description":"100% Combed and ringspun cotton. 30 single. Athletic Heather: 90% Combed and ringspun cotton, 10% Polyester. Dark Heather Grey: 52% Combed and ringspun cotton, 48% Polyester",
+        "baseCost":"2.68",
+        "price":"399",
+        "category": "topwear"
+      },
+      {
+      "brand":"American Apparel",
+      "type":"T-shirts",
+        "subcategory":"men",
+      "name":"Unisex Premium Fine Jersey T-shirt",
+      "description":"100% Cotton",
+      "baseCost":"5",
+      "price":"499",
+      "category": "topwear"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"T-shirts",
+      "subcategory":"men",
+      "name":"Unisex Premium Scoop Neck Tee",
+      "description":"100% Combed Cotton, ( Melange Grey : 85% Cotton 15% Viscose ) Jersey 3oz \/ 115g",
+      "baseCost":"4.13",
+      "price":"299",
+      "category": "topwear"
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "subcategory":"men",
+      "name":"Unisex Standard Softstyle T-Shirt",
+      "description":"100% Cotton. Sport Grey: 90% Cotton, 10% Polyester. All heathers: 65% Polyester, 35% Cotton",
+      "baseCost":"2.12",
+      "price":"299",
+      "category": "topwear"
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "subcategory":"men",
+      "name":"Men's Ultra Cotton Long Sleeve T",
+      "description":"100% Cotton. Ash: 99% Cotton, 1% Polyester. Dark Heather, Safety Green and Safety Orange: 50% Cotton, 50% Polyester. Sports Grey: 90% Cotton, 10% Polyester",
+      "baseCost":"4.47",
+      "price":"299",
+      "category": "topwear"
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "subcategory":"men",
+      "name":"Unisex Standard Heavy Cotton T-Shirt",
+      "description":"100% Ringspun cotton pre-shrunk jersey knit. Sports Grey: 90% Ringspun cotton, 10% Polyester",
+      "baseCost":"2.12",
+      "price":"299",
+      "category": "topwear"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"T-shirts",
+      "subcategory":"men",
+      "name":"Unisex Premium T-shirt",
+      "description":"100% Combed Cotton, ( Melange Grey : 85% Cotton 15% Viscose ) Jersey 4oz \/ 165g",
+      "baseCost":"3.68",
+      "price":"299",
+      "category": "topwear"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"T-shirts",
+      "name":"Men's Premium Fine Jersey Vest",
+      "description":"100% Combed Cotton, Jersey 3oz \/ 115g",
+      "baseCost":"3.82",
+      "price":"299",
+      "category": "topwear",
+      "subcategory":"men"
+
+      },
+      {
+      "brand":"American Apparel",
+      "type":"T-shirts",
+      "name":"American Apparel Fine Jersey Tank",
+      "description":"100% Cotton",
+      "baseCost":"7.67",
+      "price":"299",
+      "category": "topwear",
+      "subcategory":"men"
+      },
+      {
+      "brand":"Fruit of the Loom",
+      "type":"T-shirts",
+      "name":"Unisex Premium T-shirt",
+      "description":"100% Ringspun cotton pre-shrunk jersey knit. Sports Grey: 90% Ringspun cotton, 10% Polyester",
+      "baseCost":"4.73",
+      "price":"299",
+      "subcategory":"men",
+      "category": "topwear"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"Sweatshirts",
+      "name":"Unisex Premium Sweatshirt",
+      "description":"80% Combed Cotton 20% Polyester Brushed 3-ply 9oz \/ 320g",
+      "baseCost":"11.18",
+      "price":"1299",
+      "subcategory":"men",
+      "image":"https://images.unsplash.com/photo-1578681994506-b8f463449011?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"Sweatshirts",
+      "name":"Unisex Super-Premium Sweatshirt",
+      "description":"Terry - unbrushed fleece - soft touch, 85% Organic ring-spun Combed Cotton, 15% Polyester",
+      "baseCost":"15.75",
+      "price":"1299",
+      "subcategory":"men",
+      "category": "sportswear"
+      },
+      {
+      "brand":"Fruit of the Loom",
+      "type":"Sweatshirts",
+      "name":"Unisex Standard Sweatshirt",
+      "description":"80% Cotton, Belcoro\u00ae yarn, 20% Polyester",
+      "baseCost":"7.6",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"Hoodies",
+      "name":"Unisex Premium Hoodie",
+      "description":"Brushed fleece - soft touch, 85% Organic ring-spun Combed Cotton 15% Polyester",
+      "baseCost":"19.42",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Awdis",
+      "type":"Hoodies",
+      "name":"Unisex Standard College Hoodie",
+      "description":"80% Cotton, 20% Polyester",
+      "baseCost":"8.98",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"Hoodies",
+      "name":"Men's Lightweight Zip Hoodie",
+      "description":"80% Combed Cotton 20% Polyester Brushed 3-ply 9oz \/ 320g",
+      "baseCost":"16.43",
+      "price":"1299",
+      "subcategory":"men",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"Womens",
+      "name":"Premium Scoop Neck T-shirt",
+      "description":"100% Organic ring-spun Combed Cotton",
+      "baseCost":"4.17",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Bella & Canvas",
+      "type":"T-shirts",
+      "name":"Ladies Premium Favourite T-shirt",
+      "description":"100% Combed and ringspun cotton",
+      "baseCost":"3.28",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"T-shirts",
+      "name":"Women's Premium T-shirt",
+      "description":"100% Organic ring-spun Combed Cotton",
+      "baseCost":"4.33",
+      "price":"499",
+      "subcategory":"women",
+      "category": "tops"
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "name":"Ladies Standard Softstyle T-shirt",
+      "description":"100% Cotton. Sport Grey: 90% Cotton, 10% Polyester. All Heathers: 65% Polyester, 35% Cotton",
+      "baseCost":"2",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "name":"Ladies Standard Long Sleeve T-shirt",
+      "description":"50% Cotton, 50% Polyester fleece",
+      "baseCost":"4.5",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "sportswear"
+      },
+      {
+      "brand":"Gildan",
+      "type":"Sweatshirts",
+      "name":"Ladies Standard Tank Top",
+      "description":"100% Cotton pre-shrunk. Jersey knit. Sport Grey: ringspun 90% Cotton, 10% Polyester",
+      "baseCost":"2.22",
+      "price":"1299",
+      "subcategory":"women",
+      "category": "winterwear"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"T-shirts",
+      "name":"Women's Premium Regular Fit T-shirt",
+      "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Jersey 3oz \/ 130g",
+      "baseCost":"3.15",
+      "price":"1499",
+      "subcategory":"women",
+      "category": "Sportswear"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"vest",
+      "name":"Women's Premium Tunic Vest",
+      "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Fine Jersey 3oz \/ 115g",
+      "baseCost":"4.05",
+      "price":"1299",
+      "category": "tops"
+      },
+      {
+        "brand":"Stanley Stella",
+        "type":"T-shirts",
+        "name":"Men's Premium Organic T-shirt",
+        "description":"100% Organic ring-spun Combed Cotton",
+        "baseCost":"4.33",
+        "price":"1299",
+        "category": "tops"
+      },
+      {
+        "brand":"Bella & Canvas",
+        "type":"T-shirts",
+        "name":"Unisex Premium Jersey T-shirt",
+        "description":"100% Combed and ringspun cotton. 30 single. Athletic Heather: 90% Combed and ringspun cotton, 10% Polyester. Dark Heather Grey: 52% Combed and ringspun cotton, 48% Polyester",
+        "baseCost":"2.68",
+        "price":"1299",
+        "category": "tops"
+      },
+      {
+      "brand":"American Apparel",
+      "type":"T-shirts",
+      "name":"Unisex Premium Fine Jersey T-shirt",
+      "description":"100% Cotton",
+      "baseCost":"7",
+      "category": "tops",
+      "subcategory": "women"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"T-shirts",
+      "name":"Unisex Premium Scoop Neck Tee",
+      "description":"100% Combed Cotton, ( Melange Grey : 85% Cotton 15% Viscose ) Jersey 3oz \/ 115g",
+      "baseCost":"4.13",
+      "category": "tops",
+      "subcategory": "women"
+
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "name":"Unisex Standard Softstyle T-Shirt",
+      "description":"100% Cotton. Sport Grey: 90% Cotton, 10% Polyester. All heathers: 65% Polyester, 35% Cotton",
+      "baseCost":"2.12",
+      "category": "tops",
+      "subcategory": "women"
+
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "name":"Men's Ultra Cotton Long Sleeve T",
+      "description":"100% Cotton. Ash: 99% Cotton, 1% Polyester. Dark Heather, Safety Green and Safety Orange: 50% Cotton, 50% Polyester. Sports Grey: 90% Cotton, 10% Polyester",
+      "baseCost":"4.47",
+      "category": "tops",
+      "subcategory": "women"
+
+      },
+      {
+      "brand":"Gildan",
+      "type":"T-shirts",
+      "name":"Unisex Standard Heavy Cotton T-Shirt",
+      "description":"100% Ringspun cotton pre-shrunk jersey knit. Sports Grey: 90% Ringspun cotton, 10% Polyester",
+      "baseCost":"2.12",
+      "category": "tops",
+      "subcategory": "women"
+
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"T-shirts",
+      "name":"Unisex Premium T-shirt",
+      "description":"100% Combed Cotton, ( Melange Grey : 85% Cotton 15% Viscose ) Jersey 4oz \/ 165g",
+      "baseCost":"3.68",
+      "category": "tops",
+      "subcategory": "women"
+
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"T-shirts",
+      "subcategory":"men",
+      "name":"Men's Premium Fine Jersey Vest",
+      "description":"100% Combed Cotton, Jersey 3oz \/ 115g",
+      "baseCost":"3.82",
+      "category":"topwear"
+      },
+      {
+      "brand":"American Apparel",
+      "subcategory":"mens",
+      "type":"T-shirts",
+      "name":"American Apparel Fine Jersey Tank",
+      "description":"100% Cotton",
+      "baseCost":"7.67"
+      },
+      {
+      "brand":"Fruit of the Loom",
+      "subcategory":"mens",
+      "type":"T-shirts",
+      "name":"Unisex Premium T-shirt",
+      "description":"100% Ringspun cotton pre-shrunk jersey knit. Sports Grey: 90% Ringspun cotton, 10% Polyester",
+      "baseCost":"4.73"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"Sweatshirts",
+      "subcategory":"mens",
+      "name":"Unisex Premium Sweatshirt",
+      "description":"80% Combed Cotton 20% Polyester Brushed 3-ply 9oz \/ 320g",
+      "baseCost":"11.18"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"Sweatshirts",
+      "subcategory":"mens",
+      "name":"Unisex Super-Premium Sweatshirt",
+      "description":"Terry - unbrushed fleece - soft touch, 85% Organic ring-spun Combed Cotton, 15% Polyester",
+      "baseCost":"15.75"
+      },
+      {
+      "brand":"Fruit of the Loom",
+      "type":"Sweatshirts",
+      "subcategory":"mens",
+      "name":"Unisex Standard Sweatshirt",
+      "description":"80% Cotton, Belcoro\u00ae yarn, 20% Polyester",
+      "baseCost":"7.6"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"Hoodies",
+      "name":"Unisex Premium Hoodie",
+      "description":"Brushed fleece - soft touch, 85% Organic ring-spun Combed Cotton 15% Polyester",
+      "baseCost":"19.42"
+      },
+      {
+      "brand":"Awdis",
+      "type":"Hoodies",
+      "name":"Unisex Standard College Hoodie",
+      "description":"80% Cotton, 20% Polyester",
+      "baseCost":"8.98",
+      "subcategory":"mens"
+
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"Hoodies",
+      "name":"Men's Lightweight Zip Hoodie",
+      "description":"80% Combed Cotton 20% Polyester Brushed 3-ply 9oz \/ 320g",
+      "baseCost":"16.43"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"Womens",
+      "name":"Premium Scoop Neck T-shirt",
+      "description":"100% Organic ring-spun Combed Cotton",
+      "baseCost":"4.17"
+      },
+      {
+      "brand":"Bella & Canvas",
+      "type":"Womens",
+      "name":"Ladies Premium Favourite T-shirt",
+      "description":"100% Combed and ringspun cotton",
+      "baseCost":"3.28",
+      "category":"tops",
+      "subcategory":"women",
+      "image":"https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+      },
+      {
+      "brand":"Stanley Stella",
+      "type":"Womens",
+      "name":"Women's Premium T-shirt",
+      "description":"100% Organic ring-spun Combed Cotton",
+      "baseCost":"4.33"
+      },
+      {
+      "brand":"Gildan",
+      "type":"Womens",
+      "name":"Ladies Standard Softstyle T-shirt",
+      "description":"100% Cotton. Sport Grey: 90% Cotton, 10% Polyester. All Heathers: 65% Polyester, 35% Cotton",
+      "baseCost":"2"
+      },
+      {
+      "brand":"Gildan",
+      "type":"Womens",
+      "name":"Ladies Standard Long Sleeve T-shirt",
+      "description":"50% Cotton, 50% Polyester fleece",
+      "baseCost":"4.5"
+      },
+      {
+      "brand":"Gildan",
+      "type":"Womens",
+      "name":"Ladies Standard Tank Top",
+      "description":"100% Cotton pre-shrunk. Jersey knit. Sport Grey: ringspun 90% Cotton, 10% Polyester",
+      "baseCost":"2.22"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"Womens",
+      "name":"Women's Premium Regular Fit T-shirt",
+      "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Jersey 3oz \/ 130g",
+      "baseCost":"3.15"
+      },
+      {
+      "brand":"Continental Clothing",
+      "type":"Womens",
+      "name":"Women's Premium Tunic Vest",
+      "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Fine Jersey 3oz \/ 115g",
+      "baseCost":"4.05"
+      },
+      {
+        "image":"https://cdn.shopify.com/s/files/1/0661/7423/products/never-stop-playin-right-view_1080x.jpg?v=1657530964",
+        "brand":"Urban Monkey",
+        "type":"Men",
+        "name":"never stop playin",
+        "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Fine Jersey 3oz \/ 115g",
+        "baseCost":"4.05",
+        "category":"accessories",
+        "subcategory":"men",
+        "price":"1349"
+
+        },
+        {
+          "image":"https://cdn.shopify.com/s/files/1/0661/7423/products/howzat-left-view_1080x.jpg?v=1657544904",
+          "brand":"Urban Monkey",
+          "type":"cap",
+          "subcategory":"women",
+          "name":"never give up",
+          "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Fine Jersey 3oz \/ 115g",
+          "baseCost":"4.05",
+          "category":"accessories",
+          "price":"1299"
+          },
+          {
+            "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+            "brand":"Nike",
+            "type":"cap",
+            "subcategory":"men",
+            "name":"never give up",
+            "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Fine Jersey 3oz \/ 115g",
+            "baseCost":"4.05",
+            "category":"footwear",
+            "price":"1299"
+            },
+            {
+              "image":"https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+              "brand":"Nike",
+              "type":"Womens",
+              "subcategory":"women",
+              "name":"never give up",
+              "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Fine Jersey 3oz \/ 115g",
+              "baseCost":"4.05",
+              "category":"footwear",
+              "price":"1299"
+              },
+              {
+                "image":"https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+                "brand":"Nike",
+                "type":"Womens",
+                "subcategory":"men",
+                "name":"never give up",
+                "description":"100% Combed Cotton ( Melange Grey : 85% Cotton 15% Viscose ) Fine Jersey 3oz \/ 115g",
+                "baseCost":"4.05",
+                "category":"footwear",
+                "price":"1299"
+                }
+  
+
+
+      
+  ]

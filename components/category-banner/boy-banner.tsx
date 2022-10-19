@@ -12,7 +12,7 @@ const BoyBanner = () => {
       />
       <Offer image="/images/free-shipping.jpg" />
       <Box sx={{ px: 2, pt: 2 }}>
-        <Typography fontSize="20px" fontWeight={700}>
+        <Typography fontSize="1.25rem" fontWeight={700}>
           Summer Specials
         </Typography>
       </Box>

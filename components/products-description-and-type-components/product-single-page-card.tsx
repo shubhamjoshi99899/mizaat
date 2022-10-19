@@ -29,6 +29,7 @@ import { GifBoxRounded } from "@mui/icons-material";
 import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
 import SelectField from "../form-components/select-field";
 import PrimaryButton from "../common/buttons/primary-button";
+import ShareSocial from "../common/modal/share-social";
 
 const images = [
   {
@@ -61,8 +62,18 @@ const colors = [
   { id: "5", name: "Yellow" },
 ];
 
-const ProductSinglePageCard = () => {
+interface Props {
+  open?: any;
+  handleClose?: any;
+  handleOpen?: any;
+}
+const ProductSinglePageCard: React.FC<Props> = ({
+  open,
+  handleClose,
+  handleOpen,
+}) => {
   const [value, setValue] = React.useState(null);
+  const [image, setImage] = React.useState("");
 
   const handleChange = (event: any) => {
     setValue(event.target.value);
@@ -72,6 +83,7 @@ const ProductSinglePageCard = () => {
   return (
     <>
       <Box sx={{ mb: 10 }}>
+        <ShareSocial open={open} handleClose={handleClose} />
         <Typography textAlign="center" variant="h5" fontWeight={700}>
           HnM Full Sleeves Hoodie
         </Typography>
@@ -91,7 +103,7 @@ const ProductSinglePageCard = () => {
               <CardMedia
                 component="img"
                 height="auto"
-                image="https://ae01.alicdn.com/kf/H9b9a2d45a31e4ed0b87db34cb0b94e48C/CHAIFENKO-Men-s-Autumn-Hoodies-Men-Spring-Anime-Graffiti-Sweatshirt-Male-Hip-Hop-Harajuku-Japanese-Streetwear.jpg_Q90.jpg_.webp"
+                image={image ? image : images[0]?.image}
                 alt="green iguana"
                 sx={{}}
               />
@@ -115,6 +127,9 @@ const ProductSinglePageCard = () => {
                   }}
                   key={index}
                   image={img.image}
+                  onClick={() => {
+                    setImage(img.image);
+                  }}
                 ></CardMedia>
               ))}
             </Stack>

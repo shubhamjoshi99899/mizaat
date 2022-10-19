@@ -19,7 +19,7 @@ const BannersComponent: React.FC<Props> = ({
       {" "}
       <Box sx={{ p: 2, marginBottom: { marginBottom } }}>
         {bannerHeading ? (
-          <Typography fontSize="20px" fontWeight={700} marginBottom="12px">
+          <Typography fontSize="1.25rem" fontWeight={700} marginBottom="12px">
             {bannerHeading}
           </Typography>
         ) : null}

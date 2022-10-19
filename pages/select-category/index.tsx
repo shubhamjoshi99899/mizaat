@@ -1,13 +1,13 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import CategoriesAvatar from "../../components/categories/categories-avatar";
-import SearchFieldComponent from "../../components/common/search-field-component";
+import SearchFieldComponent from "../../components/form-components/search-field-component";
 import PrimaryTab from "../../components/common/tab-panels/primary-tab";
 import TwoLayerText from "../../components/common/two-layer-text";
 import GirlsCategories from "../api/girls-categories";
-import BoysCategories from "../api/boys-categories";
 import BoyBanner from "../../components/category-banner/boy-banner";
 import PriceAvatar from "../../components/categories/price-avatar";
+import Mens from "../api/boys-categories";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -69,24 +69,24 @@ const Category = () => {
           <Typography fontSize="20px" fontWeight={700} marginBottom="12px">
             Categories
           </Typography>
-          <CategoriesAvatar category={BoysCategories} />
+          <CategoriesAvatar category={Mens} subcategory="men" />
           <Typography fontSize="20px" fontWeight={700} marginBottom="12px">
             Offers
           </Typography>
 
-          <PriceAvatar category={BoysCategories} />
+          <PriceAvatar category={Mens} />
         </TabPanel>
         <TabPanel value={tabvalue} index={1}>
           <Typography fontSize="20px" fontWeight={700} marginBottom="12px">
             Categories
           </Typography>
-          <CategoriesAvatar category={GirlsCategories} />
+          <CategoriesAvatar category={GirlsCategories} subcategory="women" />
         </TabPanel>
         <TabPanel value={tabvalue} index={2}>
           <Typography fontSize="20px" fontWeight={700} marginBottom="12px">
             Categories
           </Typography>
-          <CategoriesAvatar category={BoysCategories} />
+          <CategoriesAvatar category={Mens} />
         </TabPanel>
         <TabPanel value={tabvalue} index={3}>
           <Typography fontSize="20px" fontWeight={700} marginBottom="12px">

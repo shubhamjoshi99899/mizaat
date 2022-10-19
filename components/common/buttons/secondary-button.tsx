@@ -10,32 +10,43 @@ interface Props {
   onClick?: any;
   sx?: any;
   type: any;
+  icon?: any;
   disabled?: boolean;
 }
 
 const SecondaryButtonComponent = styled(Button)({
-  boxShadow: "none",
-  fontSize: "1.25rem",
-  fontWeight: 700,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-  height: "46px",
-  lineHeight: 0.5,
-  backgroundColor: "transparent",
-  color: "pink",
-  border: "1px solid pink",
+  boxShadow: "none !important",
+  backgroundImage: "linear-gradient(1deg, #4F58FD, #149BF3 99%) !important",
+  backgroundColor: "#3EB2FD !important",
+  borderRadius: "100px",
+  padding: "4px 20px",
+  textAlign: "center",
+  fontSize: "0.75rem",
+  display: "inline-flex",
 
-  "&:hover": {
-    transition: "0.2s ease-in",
-    backgroundColor: "#031637",
-    boxShadow: "none",
+  cursor: "pointer",
+  fontWeight: 700,
+  transition: "backgroundColor .2s,background-position .2s",
+  lineHeight: 1,
+  color: "#fff",
+  justifyContent: "center",
+
+  "&.Mui-hover": {
+    backgroundPosition: "-20px -20px",
   },
-  "&.Mui-disabled": {
-    backgroundColor: "#041E49 !important",
-    opacity: "54%",
-    color: "#fff",
+
+  "& .MuiInputBase-root": {
+    color: theme.palette.primary.main,
+    height: 60,
+    fontWeight: 500,
+    fontSize: "0.8125rem",
+  },
+  "& .Mui-focused": {
+    outline: "0 !important",
+    border: "none !important",
+  },
+  "& .MuiOutlinedInput-notchedOutline": {
+    border: "1px solid red",
   },
 });
 
@@ -44,6 +55,7 @@ const SecondaryButton: React.FC<Props> = ({
   buttonText,
   onClick,
   type,
+  icon,
   disabled,
   sx,
 }) => {
@@ -55,6 +67,7 @@ const SecondaryButton: React.FC<Props> = ({
       type={type}
       onClick={onClick}
       disableRipple
+      endIcon={icon}
     >
       {buttonText}
     </SecondaryButtonComponent>

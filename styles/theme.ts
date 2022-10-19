@@ -119,7 +119,7 @@ const theme = createTheme({
 
   palette: {
     primary: {
-      main: "#AA96DA",
+      main: "#000",
       light:'#f9f9f9',
 
     },

@@ -3,7 +3,7 @@ import React from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import TwoLayerText from "../components/common/two-layer-text";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import SearchFieldComponent from "../components/common/search-field-component";
+import SearchFieldComponent from "../components/form-components/search-field-component";
 import ProductListingCard from "../components/products-description-and-type-components/product-listing-card";
 import FavouriteProductCard from "../components/products-description-and-type-components/favourite-product-card";
 

@@ -19,6 +19,7 @@ interface Props {
   onClick?: any;
   onFocus?: any;
   searching?: boolean;
+  type?: any;
 }
 const SearchField = styled(TextField)({
   boxShadow: "none",
@@ -34,7 +35,7 @@ const SearchField = styled(TextField)({
   "& .MuiInputBase-root": {
     color: theme.palette.grey[100],
     height: "50px",
-    fontWeight: 500,
+    fontWeight: 700,
     fontSize: "0.9375rem",
     letterSpacing: "0.25px",
     paddingRight: "0px !important",
@@ -59,6 +60,7 @@ const SearchFieldComponent: React.FC<Props> = ({
   onChange,
   onFocus,
   goback,
+  type,
   typing,
 }) => {
   return (
@@ -126,7 +128,7 @@ const SearchFieldComponent: React.FC<Props> = ({
         onFocus={onFocus}
         name={name}
         sx={sx}
-        type="text"
+        type={type ? type : "text"}
       />
     </>
   );

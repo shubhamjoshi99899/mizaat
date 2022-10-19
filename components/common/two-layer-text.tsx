@@ -1,5 +1,4 @@
 import { Box, IconButton, Stack, Typography } from "@mui/material";
-import { CSSProperties } from "@mui/styled-engine";
 import Image from "next/image";
 import React from "react";
 import theme from "../../styles/theme";
@@ -11,9 +10,9 @@ interface Props {
   marginBottomText1?: any;
   marginBottomText2?: any;
   otp?: boolean;
-  fontSize?: any;
   isProfile?: boolean;
   edit?: boolean;
+  fontSize?: any;
 }
 
 const TwoLayerText: React.FC<Props> = ({
@@ -29,29 +28,27 @@ const TwoLayerText: React.FC<Props> = ({
 }) => {
   return (
     <Box>
-      {text1 ? (
-        <Typography
-          sx={{
-            fontWeight: 700,
-            fontSize: isProfile ? "2.875rem" : fontSize,
-            fontFamily: "Montserrat",
-            //   textAlign: "center",
-            color: theme.palette.primary.main,
-            lineHeight: "28px",
-            marginBottom: marginBottomText1,
-          }}
-          variant="h6"
-        >
-          {text1}
-        </Typography>
-      ) : null}
+      <Typography
+        sx={{
+          fontWeight: 700,
+          fontSize: fontSize ? fontSize : isProfile ? "17px" : "28px",
+          fontFamily: "Montserrat",
+          //   textAlign: "center",
+          color: theme.palette.primary.main,
+          lineHeight: "28px",
+          marginBottom: marginBottomText1,
+        }}
+        variant="h6"
+      >
+        {text1}
+      </Typography>
       {text2 ? (
         <Typography
           sx={{
             fontWeight: isProfile ? 600 : 500,
             fontFamily: "Montserrat",
             lineHeight: "24px",
-            fontSize: isProfile ? "0.6875rem" : "auto",
+            fontSize: isProfile ? "11px" : "16px",
             color: theme.palette.grey[100],
             marginBottom: marginBottomText2,
           }}

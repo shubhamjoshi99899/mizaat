@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CardHeaders from "../components/card-header";
 import BannersComponent from "../components/categories/banners";
-import SearchFieldComponent from "../components/common/search-field-component";
+import SearchFieldComponent from "../components/form-components/search-field-component";
 import TwoLayerText from "../components/common/two-layer-text";
 import CategorySelect from "../components/home-page-component/category-select";
 import MostPopular from "../components/product/most-popular";

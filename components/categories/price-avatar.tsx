@@ -31,7 +31,7 @@ const PriceAvatar: React.FC<Props> = ({ image, price, category }) => {
               anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               badgeContent={
                 <SmallAvatar alt="Remy Sharp">
-                  <Typography fontWeight="700" fontSize="18px" color="#000">
+                  <Typography fontWeight="700" fontSize="1.125rem" color="#000">
                     ₹ {categories.price} onwards
                   </Typography>
                 </SmallAvatar>

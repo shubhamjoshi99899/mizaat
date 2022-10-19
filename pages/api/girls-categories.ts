@@ -31,6 +31,12 @@ const GirlsCategories = [{
     "description":'SleepWear',
     "image": 'https://images.pexels.com/photos/4473864/pexels-photo-4473864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 },
+
+{
+    "description":'FootWear',
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+
+},
 {
     "description":'WinterWear',
     "image": 'https://images.pexels.com/photos/6383012/pexels-photo-6383012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'

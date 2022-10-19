@@ -23,9 +23,25 @@ import logo from "../public/mijaat.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useRouter } from "next/router";
 type Anchor = "right";
-const menuItem = ["Inbox", "Starred", "Send email", "Drafts"];
-export default function HeaderComponent() {
+const menuItem = ["Account", "Orders", "Wishlist", "Logout"];
+
+interface Props {
+  cart: any;
+  addtoCart: any;
+  removefromCart: any;
+  clearCart: any;
+  subTotal: any;
+}
+const HeaderComponent: React.FC<Props> = ({
+  cart,
+  addtoCart,
+  removefromCart,
+  clearCart,
+  subTotal,
+}) => {
+  const router = useRouter();
   const [value, setValue] = React.useState("English");
   const handleChange = (event: any) => {
     setValue(event.target.value);
@@ -50,9 +66,7 @@ export default function HeaderComponent() {
         {menuItem.map((text, index) => (
           <ListItem color="#fff" key={text} disablePadding>
             <ListItemButton>
-              <ListItemIcon>
-                <MailIcon />
-              </ListItemIcon>
+              <ListItemIcon>{/* <MailIcon /> */}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
@@ -105,7 +119,7 @@ export default function HeaderComponent() {
               <IconButton>
                 <SearchIcon sx={{ color: theme.palette.grey[100] }} />
               </IconButton>
-              <IconButton>
+              <IconButton onClick={() => router.push("/favourite")}>
                 <FavoriteBorderIcon sx={{ color: theme.palette.grey[100] }} />
               </IconButton>
               <IconButton>
@@ -133,4 +147,5 @@ export default function HeaderComponent() {
       </AppBar>
     </Box>
   );
-}
+};
+export default HeaderComponent;

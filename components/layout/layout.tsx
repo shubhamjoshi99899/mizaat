@@ -5,7 +5,6 @@ import HeaderComponent from "../navbar";
 const Layout = (props: any) => {
   return (
     <>
-      <HeaderComponent />
       {props.children}
       <BottomNavigationComponent />
     </>

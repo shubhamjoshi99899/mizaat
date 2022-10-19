@@ -20,7 +20,7 @@ const BottomNavigationComponent = () => {
     },
     {
       label: "Categories",
-      link: "/category",
+      link: "/select-category",
       icon: <ViewComfyIcon sx={{ color: "#6b6e70" }} />,
       activeIcon: <ViewComfyIcon sx={{ color: "#AA96DA" }} />,
     },

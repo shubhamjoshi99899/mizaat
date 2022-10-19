@@ -12,10 +12,11 @@ import React from "react";
 import TwoLayerText from "../components/common/two-layer-text";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import SearchFieldComponent from "../components/common/search-field-component";
+import SearchFieldComponent from "../components/form-components/search-field-component";
 import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import HomeIcon from "@mui/icons-material/Home";
 import PrimaryButton from "../components/common/buttons/primary-button";
+import SecondaryButton from "../components/common/buttons/secondary-button";
 
 const Addresses = [
   {
@@ -48,7 +49,7 @@ const ShippingAdress = () => {
         <IconButton>
           <ArrowBackIcon />
         </IconButton>
-        <TwoLayerText text1="Shipping Adress" fontSize="20px" />
+        <TwoLayerText text1="Shipping Adress" />
         <IconButton>
           <Badge badgeContent={4} color="secondary">
             <ShoppingCartIcon />
@@ -116,11 +117,12 @@ const ShippingAdress = () => {
         />
       </Box>
       <Box sx={{ m: 2, mb: 10 }}>
-        <PrimaryButton
+        <SecondaryButton
           type="submit"
           variant="contained"
           buttonText="Continue"
           sx={{
+            p: 2,
             background: "#fff",
             width: "100%",
             borderRadius: "16px",

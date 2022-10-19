@@ -27,7 +27,7 @@ const GirlsBanner = () => {
       </Grid>
       <Offer marginBottom="20px" image="/images/free-shipping.jpg" />
       <Box sx={{ px: 3, pt: 2, overflow: "hidden" }}>
-        <Typography fontSize="20px" fontWeight={700} marginBottom="12px">
+        <Typography fontSize="1.2 5rem" fontWeight={700} marginBottom="12px">
           Categories
         </Typography>
       </Box>

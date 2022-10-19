@@ -1,12 +1,19 @@
 import { Avatar, Box, Grid, Typography } from "@mui/material";
+import { useRouter } from "next/router";
 import React from "react";
 
 interface Props {
   category: any;
   marginBottom?: any;
+  subcategory?: string;
 }
 
-const CategoriesAvatar: React.FC<Props> = ({ category, marginBottom }) => {
+const CategoriesAvatar: React.FC<Props> = ({
+  category,
+  marginBottom,
+  subcategory,
+}) => {
+  const router = useRouter();
   return (
     <Box>
       <Grid sx={{ marginBottom: { marginBottom } }} container>
@@ -20,6 +27,12 @@ const CategoriesAvatar: React.FC<Props> = ({ category, marginBottom }) => {
                 justifyContent: "space-between",
                 padding: "0px !important",
               }}
+              onClick={() =>
+                router.push({
+                  pathname: `/categories/${categories.description.toLowerCase()}`,
+                  query: { subcategory },
+                })
+              }
             >
               <Avatar
                 src={categories.image}
