@@ -52,26 +52,26 @@ const ProductListingCard: React.FC<Props> = ({ data, product, onClick }) => {
                 mx: 1,
                 mb: 2,
                 position: "relative",
-                height: {
-                  [theme.breakpoints.up("md")]: {
-                    height: "424px !important",
-                  },
-                  lg: "594px !important",
-                  xs: "414px !important",
-                  md: "454px !important",
-                },
+                // height: {
+                //   [theme.breakpoints.up("md")]: {
+                //     height: "424px !important",
+                //   },
+                //   lg: "594px !important",
+                //   xs: "414px !important",
+                //   md: "454px !important",
+                // },
               }}
             >
               <CardMedia
                 sx={{
                   height: {
-                    lg: "394px",
+                    lg: "244px",
                     xs: "194px",
                     sm: "244px",
                     md: "244px",
                   },
                   // height: "194px",
-                  objectFit: { lg: "contain", sm: "cover" },
+                  objectFit: "cover",
                 }}
                 component="img"
                 image={item?.image}
@@ -119,7 +119,7 @@ const ProductListingCard: React.FC<Props> = ({ data, product, onClick }) => {
                   <ShareIcon sx={{ color: "#0000FF" }} />
                 </IconButton>
               </CardActions>
-              <Box sx={{ mx: 1, mb: 2 }}>
+              <Box sx={{ mx: 1 }}>
                 <Stack
                   direction="row"
                   justifyContent="space-between"
@@ -128,8 +128,8 @@ const ProductListingCard: React.FC<Props> = ({ data, product, onClick }) => {
                   <Typography
                     sx={{ flexGrow: 1 }}
                     variant="h5"
-                    fontWeight="700"
-                    fontSize="2.15rem"
+                    fontWeight="600"
+                    fontSize="1.15rem"
                   >
                     ₹{item?.price}
                   </Typography>
@@ -156,7 +156,7 @@ const ProductListingCard: React.FC<Props> = ({ data, product, onClick }) => {
                         }
                       />
                     ) : ( */}
-                    <IconButton
+                    {/* <IconButton
                       sx={{
                         boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                         marginBottom: "20px",
@@ -173,24 +173,24 @@ const ProductListingCard: React.FC<Props> = ({ data, product, onClick }) => {
                           color: "#fff",
                         }}
                       />
-                    </IconButton>
+                    </IconButton> */}
                     {/* )} */}
                   </Stack>
                 </Stack>
-                <Typography variant="body1" fontSize="1rem" fontWeight="900">
+                <Typography variant="body2" fontWeight="900">
                   {item?.brand}
                 </Typography>
-                <Typography variant="h6" fontWeight="500">
+                <Typography mb={2} fontSize="0.75rem" variant="subtitle2">
                   {item?.name}
                 </Typography>
-                <Typography
+                {/* <Typography
                   variant="subtitle1"
                   fontWeight="700"
                   gutterBottom
                   sx={{ marginBottom: 2 }}
                 >
                   {item?.category}
-                </Typography>
+                </Typography> */}
               </Box>
             </Card>
           </Grid>

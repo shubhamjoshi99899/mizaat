@@ -157,9 +157,8 @@ const ProductSinglePageCard: React.FC<Props> = ({
                 fontSize="1.25rem"
                 color="text.secondary"
               >
-                This impressive paella is a perfect party dish and a fun meal to
-                cook together with your guests. Add 1 cup of frozen peas along
-                with the mussels, if you like.
+                Green solid casual shirt, has a mandarin collar, button placket,
+                1 pocket, long sleeves, curved hem.
               </Typography>
             </CardContent>
 
@@ -228,6 +227,90 @@ const ProductSinglePageCard: React.FC<Props> = ({
                 }}
               />
             </Stack>
+            <Typography px={2} mb={2} variant="h5" fontWeight={700}>
+              Specifications
+            </Typography>
+
+            <Grid sx={{ px: 2 }} spacing={1} container>
+              <Grid
+                mb={2}
+                sx={{ borderBottom: "1px solid #e1e1e1" }}
+                item
+                xs={6}
+              >
+                <Typography variant="h6" fontWeight={600}>
+                  Fabric
+                </Typography>
+                <Typography variant="subtitle1" fontWeight={500}>
+                  Cotton
+                </Typography>
+              </Grid>
+              <Grid
+                mb={2}
+                sx={{ borderBottom: "1px solid #e1e1e1" }}
+                item
+                xs={6}
+              >
+                <Typography variant="h6" fontWeight={600}>
+                  Sleeves Length
+                </Typography>
+                <Typography variant="subtitle1" fontWeight={500}>
+                  Full Sleeves
+                </Typography>
+              </Grid>
+              <Grid
+                mb={2}
+                sx={{ borderBottom: "1px solid #e1e1e1" }}
+                item
+                xs={6}
+              >
+                <Typography variant="h6" fontWeight={600}>
+                  Transparency
+                </Typography>
+                <Typography variant="subtitle1" fontWeight={500}>
+                  Opaque
+                </Typography>
+              </Grid>
+              <Grid
+                mb={2}
+                sx={{ borderBottom: "1px solid #e1e1e1" }}
+                item
+                xs={6}
+              >
+                <Typography variant="h6" fontWeight={600}>
+                  Weave Pattern
+                </Typography>
+                <Typography variant="subtitle1" fontWeight={500}>
+                  Regular
+                </Typography>
+              </Grid>
+              <Grid
+                mb={2}
+                sx={{ borderBottom: "1px solid #e1e1e1" }}
+                item
+                xs={6}
+              >
+                <Typography variant="h6" fontWeight={600}>
+                  Sustainable
+                </Typography>
+                <Typography variant="subtitle1" fontWeight={500}>
+                  Regular
+                </Typography>
+              </Grid>
+              <Grid
+                mb={2}
+                sx={{ borderBottom: "1px solid #e1e1e1" }}
+                item
+                xs={6}
+              >
+                <Typography variant="h6" fontWeight={600}>
+                  Fit
+                </Typography>
+                <Typography variant="subtitle1" fontWeight={500}>
+                  Slim Fit
+                </Typography>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
