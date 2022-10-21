@@ -11,4 +11,8 @@ const withPWA = require("next-pwa")({
 const nextConfig = withPWA({
     // next config
 });
-module.exports = nextConfig;
+module.exports =module.exports = {
+    experimental: {
+      forceSwcTransforms: true,
+    },
+  }
