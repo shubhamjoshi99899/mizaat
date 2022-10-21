@@ -18,6 +18,8 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cart.slice";
 import React, { useState } from "react";
 import Favorite from "@mui/icons-material/Favorite";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
@@ -74,7 +76,7 @@ const ProductSinglePageCard: React.FC<Props> = ({
 }) => {
   const [value, setValue] = React.useState(null);
   const [image, setImage] = React.useState("");
-
+  const dispatch = useDispatch();
   const handleChange = (event: any) => {
     setValue(event.target.value);
     console.log(value);
@@ -219,6 +221,7 @@ const ProductSinglePageCard: React.FC<Props> = ({
                 type="submit"
                 buttonText="Add to cart"
                 variant="contained"
+                // onClick={() => dispatch(addToCart(product))}
                 sx={{
                   width: "130px",
                   fontSize: "14px",

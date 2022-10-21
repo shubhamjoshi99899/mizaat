@@ -4,24 +4,26 @@ import Image from "next/image";
 import React from "react";
 import theme from "../../styles/theme";
 import PrimaryButton from "../common/buttons/primary-button";
+import { useRouter } from "next/router";
 
 const HomePageBanner = () => {
+  const router = useRouter();
   return (
     <>
       <Stack
         alignItems="center"
         justifyContent="space-evenly"
         sx={{
-          flexDirection: { xs: "column-reverse", md: "row" },
-          flexWrap: "wrap",
+          flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" },
+          // flexWrap: "wrap",
           padding: 10,
           background: theme.palette.primary.light,
-          height: { sm: "700px" },
+          // height: { sm: "700px" },
         }}
       >
         <Box
           sx={{
-            display: { xs: "none", md: "block" },
+            display: { sm: "none", xs: "none", md: "block", lg: "block" },
             overflow: "hidden !important",
           }}
         >
@@ -54,6 +56,7 @@ const HomePageBanner = () => {
             fontWeight="900"
             textAlign="center"
             textTransform="uppercase"
+            mb={4}
           >
             Arrival <br /> Sales
           </Typography>
@@ -62,6 +65,9 @@ const HomePageBanner = () => {
             buttonText="Shop Now"
             variant="contained"
             sx={{ background: "#000", width: "124px", textAlign: "center" }}
+            onClick={() => {
+              router.push("/home");
+            }}
           />
         </Stack>
       </Stack>

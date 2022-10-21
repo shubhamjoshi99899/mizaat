@@ -15,16 +15,12 @@ interface Props {
   subcategory?: any;
 }
 
-const ProductListing: NextPage<Props> = ({
-  products,
-  category,
-  subcategory,
-}) => {
+const ProductListing: NextPage<Props> = ({ products }) => {
   const router = useRouter();
   console.log(router.query.subcategory);
   const dispatch = useDispatch();
   return (
-    <>
+    <Box sx={{ mb: 10 }}>
       <TopBar />
       <CardsFilterProducts />
       <Box sx={{ p: 2 }}>
@@ -34,13 +30,16 @@ const ProductListing: NextPage<Props> = ({
             : `No result Found`}
         </Typography>
         <Box mb={6}>
-          <ProductListingCard
-            onClick={() => dispatch(addToCart(products))}
-            data={products}
-          />
+          <Grid container>
+            {products.map((product: any) => (
+              <Grid xs={12} sm={12} md={6} lg={4} xl={3}>
+                <ProductListingCard key={product.id} product={product} />
+              </Grid>
+            ))}
+          </Grid>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
 

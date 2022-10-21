@@ -24,23 +24,32 @@ import MenuIcon from "@mui/icons-material/Menu";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
 type Anchor = "right";
 const menuItem = ["Account", "Orders", "Wishlist", "Logout"];
 
 interface Props {
-  cart: any;
-  addtoCart: any;
-  removefromCart: any;
-  clearCart: any;
-  subTotal: any;
+  cart?: any;
+  addtoCart?: any;
+  removefromCart?: any;
+  clearCart?: any;
+  subTotal?: any;
 }
 const HeaderComponent: React.FC<Props> = ({
-  cart,
   addtoCart,
   removefromCart,
   clearCart,
   subTotal,
 }) => {
+  const cart = useSelector((state: any) => state.cart);
+  const getItemsCount = () => {
+    return cart.reduce(
+      (accumulator: any, item: any) => accumulator + item.quantity,
+      0
+    );
+  };
+  // console.log(getItemsCount().length);
+
   const router = useRouter();
   const [value, setValue] = React.useState("English");
   const handleChange = (event: any) => {
@@ -122,9 +131,24 @@ const HeaderComponent: React.FC<Props> = ({
               <IconButton onClick={() => router.push("/favourite")}>
                 <FavoriteBorderIcon sx={{ color: theme.palette.grey[100] }} />
               </IconButton>
-              <IconButton>
-                <Badge badgeContent={4} color="secondary">
-                  <ShoppingCartIcon sx={{ color: theme.palette.grey[100] }} />
+              <IconButton
+                sx={{
+                  backgroundImage:
+                    getItemsCount().length === undefined
+                      ? "#transparent"
+                      : "linear-gradient(1deg, #4F58FD, #149BF3 99%) !important",
+                }}
+                onClick={() => router.push("/cart")}
+              >
+                <Badge badgeContent={getItemsCount()} color="secondary">
+                  <ShoppingCartIcon
+                    sx={{
+                      color:
+                        getItemsCount().length === undefined
+                          ? theme.palette.grey[100]
+                          : "#fff",
+                    }}
+                  />
                 </Badge>
               </IconButton>
               <IconButton

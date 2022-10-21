@@ -25,14 +25,18 @@ const TopBar: React.FC<Props> = ({ product, productPage, onClick }) => {
   return (
     <>
       <Stack direction="row" sx={{ p: 1 }}>
-        <Stack direction="row" sx={{ m: 1, flexGrow: "1" }} alignItems="center">
+        <Stack
+          direction="row"
+          sx={{ mx: 1, flexGrow: "1" }}
+          alignItems="center"
+        >
           <IconButton onClick={router.back}>
             <ArrowBackIcon />
           </IconButton>
           {product ? <Typography variant="h5">{product}</Typography> : null}
         </Stack>
 
-        {productPage ? (
+        {/* {productPage ? (
           <Stack direction="row" sx={{ m: 1 }} alignItems="center">
             <IconButton onClick={onClick}>
               <Share />
@@ -53,7 +57,7 @@ const TopBar: React.FC<Props> = ({ product, productPage, onClick }) => {
             </IconButton>
           </Stack>
         )}
-        <Divider color="grey" />
+        <Divider color="grey" /> */}
       </Stack>
     </>
   );

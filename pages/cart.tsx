@@ -1,4 +1,4 @@
-import { Box, IconButton, Stack, Typography } from "@mui/material";
+import { Box, Grid, IconButton, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
 import SecondaryButton from "../components/common/buttons/secondary-button";
 import SearchFieldComponent from "../components/form-components/search-field-component";
@@ -7,8 +7,25 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import FavouriteProductCard from "../components/products-description-and-type-components/favourite-product-card";
 import CartProductCard from "../components/products-description-and-type-components/product-in-cart-card";
 import axios from "axios";
-
+import { useSelector, useDispatch } from "react-redux";
+import {
+  incrementQuantity,
+  decrementQuantity,
+  removeFromCart,
+} from "../redux/cart.slice";
+import styles from "../styles/CartPage.module.css";
 const Cart = () => {
+  const cart = useSelector((state: any) => state.cart);
+  const dispatch = useDispatch();
+
+  const getTotalPrice = () => {
+    return cart.reduce(
+      (accumulator: any, item: any) => accumulator + item.quantity * item.price,
+      0
+    );
+  };
+  console.log(cart);
+
   const [pin, setPin] = useState<any>();
   const [service, setService] = useState<boolean>();
   const [showHelper, setShowHelper] = useState<boolean>(true);
@@ -95,7 +112,19 @@ const Cart = () => {
             </IconButton>
           </Stack>
         ) : null}
-        <CartProductCard />
+        {cart.length === 0 ? (
+          <h1>Your Cart is Empty!</h1>
+        ) : (
+          <>
+            <Grid container>
+              {cart.map((item: any) => (
+                <Grid xs={12} sm={12} md={6} lg={4} xl={3}>
+                  <CartProductCard item={item} />
+                </Grid>
+              ))}
+            </Grid>
+          </>
+        )}
       </Box>
     </>
   );
