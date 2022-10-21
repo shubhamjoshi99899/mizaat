@@ -17,7 +17,6 @@ interface Props {
 
 const ProductListing: NextPage<Props> = ({ products }) => {
   const router = useRouter();
-  console.log(router.query.subcategory);
   const dispatch = useDispatch();
   return (
     <Box sx={{ mb: 10 }}>
@@ -31,8 +30,8 @@ const ProductListing: NextPage<Props> = ({ products }) => {
         </Typography>
         <Box mb={6}>
           <Grid container>
-            {products.map((product: any) => (
-              <Grid xs={12} sm={12} md={6} lg={4} xl={3}>
+            {products.map((product: any, index: number) => (
+              <Grid key={index} xs={12} sm={12} md={6} lg={4} xl={3}>
                 <ProductListingCard key={product.id} product={product} />
               </Grid>
             ))}

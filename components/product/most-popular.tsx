@@ -23,7 +23,6 @@ const MostPopular: React.FC<props> = ({ marginBottom }) => {
   const getData = () => {
     axios.get("https://fakestoreapi.com/products").then(function (res) {
       let data = res.data;
-      console.log(data);
       setData(data);
     });
   };

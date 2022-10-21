@@ -93,7 +93,6 @@ const SecondaryTabs: React.FC<Props> = ({ category, onTabChange }) => {
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
-    console.log(value);
   };
 
   return (

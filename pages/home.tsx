@@ -19,7 +19,6 @@ interface Props {
 const Home: React.FC<Props> = ({ products }) => {
   const [search, setSearch] = useState("");
 
-  console.log(products);
   return (
     <>
       <Box sx={{ p: "20px", mb: 10 }}>

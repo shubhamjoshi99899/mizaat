@@ -17,7 +17,6 @@ const CartPage = () => {
       0
     );
   };
-  console.log(cart);
 
   return (
     <div className={styles.container}>
@@ -33,8 +32,8 @@ const CartPage = () => {
             <div>Actions</div>
             <div>Total Price</div>
           </div>
-          {cart.map((item: any) => (
-            <div className={styles.body}>
+          {cart.map((item: any, index: number) => (
+            <div key={index} className={styles.body}>
               <div className={styles.image}>
                 {/* <Image src={item.image} height="90" width="65" /> */}
               </div>

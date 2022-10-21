@@ -46,9 +46,7 @@ const SignupCompleteProfile = () => {
       handleSubmit(values);
     },
   });
-  const handleSubmit = (values: any) => {
-    console.log(values);
-  };
+  const handleSubmit = (values: any) => {};
   return (
     <>
       <Box sx={{ padding: "33px 20px", marginBottom: "30px" }}>

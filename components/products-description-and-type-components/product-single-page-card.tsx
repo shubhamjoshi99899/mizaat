@@ -79,7 +79,6 @@ const ProductSinglePageCard: React.FC<Props> = ({
   const dispatch = useDispatch();
   const handleChange = (event: any) => {
     setValue(event.target.value);
-    console.log(value);
   };
 
   return (

@@ -21,7 +21,6 @@ const SignUpBody = () => {
     },
   });
   const handleSubmit = (values: any) => {
-    console.log(values);
     router.push("/sign-up/otp-verification");
   };
   return (

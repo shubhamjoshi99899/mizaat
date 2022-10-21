@@ -24,7 +24,6 @@ const Cart = () => {
       0
     );
   };
-  console.log(cart);
 
   const [pin, setPin] = useState<any>();
   const [service, setService] = useState<boolean>();
@@ -117,8 +116,8 @@ const Cart = () => {
         ) : (
           <>
             <Grid container>
-              {cart.map((item: any) => (
-                <Grid xs={12} sm={12} md={6} lg={4} xl={3}>
+              {cart.map((item: any, index: number) => (
+                <Grid key={index} xs={12} sm={12} md={6} lg={4} xl={3}>
                   <CartProductCard item={item} />
                 </Grid>
               ))}

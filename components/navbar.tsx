@@ -48,7 +48,6 @@ const HeaderComponent: React.FC<Props> = ({
       0
     );
   };
-  // console.log(getItemsCount().length);
 
   const router = useRouter();
   const [value, setValue] = React.useState("English");

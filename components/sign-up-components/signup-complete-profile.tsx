@@ -57,7 +57,6 @@ const SignupCompleteProfile = () => {
     formik.setFieldValue("dob", newValue);
   };
   const handleSubmit = (values: any) => {
-    console.log(values);
     router.push("/library");
   };
   return (
